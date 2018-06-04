@@ -55,10 +55,9 @@ function generateCartDescription() {
     var middleCartItemsDescription = ''
     for (var i=1; i<getCart(0.length -1; i++) {
       middleCartItemsDescription += `, ${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
-    }
+    };
     cartDescrption += `${middleCartItemsDescription}, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
   }
-  
   
   return `${cartDescription}.`
 }
