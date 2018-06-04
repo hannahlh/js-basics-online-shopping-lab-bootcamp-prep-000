@@ -18,6 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  return getCart().length === 0 ? "Your shopping cart is empty." : generateCartDescription()
 }
 
 function total() {
@@ -43,4 +44,11 @@ function generateCartItem(itemName) {
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function generateCartDescription() {
+  var cartDescription = 'In your cart, you have'
+  if ( getCart().length >= 1) {
+    cartDescription += '$g'
+  }
 }
