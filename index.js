@@ -49,6 +49,6 @@ function getRandomInt(min, max) {
 function generateCartDescription() {
   var cartDescription = 'In your cart, you have'
   if ( getCart().length >= 1) {
-    cartDescription += '$g'
+    cartDescription += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
   }
 }
