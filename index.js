@@ -39,8 +39,7 @@ function placeOrder(cardNumber) {
   } else {
     var sumToCharge = total()
     setCart([])
-    return 'Your total co'
-  }
+    return `Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.`
   }
 }
 
