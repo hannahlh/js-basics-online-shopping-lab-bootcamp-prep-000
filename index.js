@@ -27,9 +27,8 @@ function total() {
   return sum
 }
 
-function removeFromCart(item) {
-  // write your code here
-  var itemToRemove = seachCartForItemToRemove(item)
+function removeFromCart(itemName) {
+  var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
 }
 
