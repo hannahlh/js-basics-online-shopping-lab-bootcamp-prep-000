@@ -34,6 +34,14 @@ function removeFromCart(itemName) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  if (argument[0] === undefined) {
+    return "Sorry, we don't have a credit card on file for you."
+  } else {
+    var sumToCharge = total()
+    setCart([])
+    return 'Your total co'
+  }
+  }
 }
 
 //helper functions
