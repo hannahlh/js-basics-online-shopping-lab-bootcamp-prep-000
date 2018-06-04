@@ -84,3 +84,11 @@ function removeItemFromCart(itemToRemove) {
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
   getCart().splice(indexOfItemToRemove,1)
 }
+
+function searchCartForItemToRemove(itemName) {
+  var searchResult
+  for (var i=0; i<getCart().length; i++) {
+    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
+  }
+  return searchResult
+}
