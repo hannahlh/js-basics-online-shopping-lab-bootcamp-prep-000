@@ -32,6 +32,8 @@ function placeOrder(cardNumber) {
   // write your code here
 }
 
+//helper functions
+
 function generateCartItem(itemName) {
   return {
     itemName:itemName,
